@@ -1,0 +1,54 @@
+table.rb {
+  width: 80%;
+  border: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th.rb {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+td.rank {
+  text-align: center;
+  width: 80px;
+}
+
+td.amount {
+  text-align: center;
+  width: 80px;
+}
+
+td.name {
+  padding: 0px 0px 0px 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  table.rb {
+    width: 100%;
+  }
+  
+  th.rb {
+    max-width: 50px;
+  }
+  
+  th.rb .username {
+    max-width: 170px;
+  }
+  
+  td.rank {
+    width: 50px;
+  }
+
+  td.amount {
+    max-width: 50px;
+  }
+  
+  td.name {
+    max-width: 100px;
+    padding: 0px 0px 0px 0px;
+  }
+}

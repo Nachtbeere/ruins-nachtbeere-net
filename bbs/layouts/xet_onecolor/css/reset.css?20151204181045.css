@@ -1,0 +1,103 @@
+/*
+ * Copyright 2014 inpleworks, Co.
+*/
+
+
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html, body { 
+	height:100%;
+	line-height: 160%;
+	font-size: 14px;
+    -webkit-text-size-adjust: none; 
+	-moz-text-size-adjust: none; 
+	-ms-text-size-adjust: none; 
+}
+body { margin:0; padding:0; background: #f1f1f1; color: #555; }
+body, table, th, td, button, input { font-family:"Nanum Gothic","굴림", Gulim, "돋움", Dotum, "Lucida Sans", "Trebuchet MS", Arial, Tahoma, sans-serif; }
+div,h1,h2,h3,h4,h5,h6,form,input,textarea,p { margin:0; padding:0; }
+fieldset, img { border:0 none; }
+a, a:visited, a:hover, a:active, a:focus { text-decoration:none; }
+a, input { outline:none; }
+:focus { outline: 0; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+
+h1.h1 { font-size: 34px; line-height: 110%; }
+h2.h2 { font-size: 28px; line-height: 120%; }
+h3.h3 { font-size: 22px; line-height: 130%; }
+h4.h4 { font-size: 16px; line-height: 140%; }
+h5.h5 { font-size: 14px; line-height: 140%; font-weight: normal; }
+h6.h6 { font-size: 12px; line-height: 140%; }
+
+.float_left { 
+	float:left; 
+}
+.float_right { 
+	float:right;
+}
+.xet_row {
+	*zoom: 1;
+}
+.xet_row:before,
+.xet_row:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.xet_row:after {
+	clear: both;
+}
+.xet_container {
+	position:relative; 
+	margin-right: auto;
+	margin-left: auto;
+	*zoom: 1;
+}
+.xet_container:before,
+.xet_container:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.xet_container:after {
+	clear: both;
+}
+
+.xet_clearfix {
+	*zoom: 1;
+}
+.xet_clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.text_center {
+	text-align: center;
+}
+.text_right {
+	text-align: right;
+}
+.text_left {
+	text-align: left;
+}

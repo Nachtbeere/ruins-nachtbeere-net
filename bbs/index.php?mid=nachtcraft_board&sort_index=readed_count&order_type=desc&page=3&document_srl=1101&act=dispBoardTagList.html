@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- META -->
+<meta charset="utf-8">
+<meta name="Generator" content="XpressEngine">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=yes">
+<!-- TITLE -->
+<title>밤딸기 플레이스 - 마인크래프트/게시판</title>
+<!-- CSS -->
+<link rel="stylesheet" href="common/css/xe.min.css%3F20200406164058.css" />
+<link rel="stylesheet" href="common/js/plugins/ui/jquery-ui.min.css%3F20200406164058.css" />
+<link rel="stylesheet" href="modules/board/skins/xedition/board.default.min.css%3F20200406164058.css" />
+<link rel="stylesheet" href="common/xeicon/xeicon.min.css%3F20200406164058.css" />
+<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49314/XEIconv12/style.css" />
+<link rel="stylesheet" href="layouts/xet_onecolor/css/reset.css%3F20151204181045.css" />
+<link rel="stylesheet" href="layouts/xet_onecolor/css/selecter.css%3F20151119202345.css" />
+<link rel="stylesheet" href="layouts/xet_onecolor/css/camera.css%3F20151121142939.css" />
+<link rel="stylesheet" href="layouts/xet_onecolor/css/layout.css%3F20151126163959.css" />
+<link rel="stylesheet" href="layouts/xet_onecolor/css/animate.min.css%3F20151119202344.css" />
+<link rel="stylesheet" href="layouts/xet_onecolor/css/responsive.css%3F20151126164252.css" />
+<link rel="stylesheet" href="modules/editor/styles/ckeditor_light/style.css%3F20200406164058.css" />
+<link rel="stylesheet" href="files/faceOff/130/layout.css%3F20160426173711.css" />
+<!-- JS -->
+<script>
+var current_url = "https://ruins.nachtbeere.net/bbs/?mid=nachtcraft_board&sort_index=readed_count&order_type=desc&page=3&document_srl=1101&act=dispBoardTagList";
+var request_uri = "https://ruins.nachtbeere.net/bbs/";
+var current_mid = "nachtcraft_board";
+var waiting_message = "서버에 요청 중입니다. 잠시만 기다려주세요.";
+var ssl_actions = new Array();
+var default_url = "https://ruins.nachtbeere.net/bbs/";
+var enforce_ssl = true;</script>
+<!--[if lt IE 9]><script src="/bbs/common/js/jquery-1.x.min.js?20200406164058"></script>
+<![endif]--><!--[if gte IE 9]><!--><script src="common/js/jquery.min.js%3F20200406164058"></script>
+<!--<![endif]--><script src="common/js/x.min.js%3F20200406164058"></script>
+<script src="common/js/xe.min.js%3F20200406164058"></script>
+<script src="modules/board/tpl/js/board.min.js%3F20200406164058"></script>
+<script src="layouts/xet_onecolor/js/viewportchecker.js%3F20151119202350"></script>
+<script src="layouts/xet_onecolor/js/modernizr.custom.js%3F20151119202350"></script>
+<script src="layouts/xet_onecolor/js/jquery.ui.totop.js%3F20151119202349"></script>
+<script src="layouts/xet_onecolor/js/jquery.easing.1.3.js%3F20151119202349"></script>
+<script src="layouts/xet_onecolor/js/jquery.mobile.customized.min.js%3F20151119202349"></script>
+<script src="layouts/xet_onecolor/js/camera.min.js%3F20151119202349"></script>
+<script src="layouts/xet_onecolor/js/jquery.fs.selecter.min.js%3F20151119202349"></script>
+<script src="layouts/xet_onecolor/js/layout.js%3F20151121151129"></script>
+<!-- RSS -->
+<!-- ICON -->
+<link rel="shortcut icon" href="files/attach/xeicon/favicon.ico" /><link rel="apple-touch-icon" href="files/attach/xeicon/mobicon.png" />
+<link rel="stylesheet" type="text/css" href="../socket/css/RaspberryRank.css">
+<link href="https://cdn.jsdelivr.net/xeicon/2.0.0/xeicon.min.css"
+      rel="stylesheet">
+<link rel="apple-touch-icon" sizes="57x57" href="https://ruins.nachtbeere.net/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ruins.nachtbeere.net/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ruins.nachtbeere.net/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ruins.nachtbeere.net/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ruins.nachtbeere.net/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ruins.nachtbeere.net/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ruins.nachtbeere.net/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ruins.nachtbeere.net/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruins.nachtbeere.net/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70651309-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel="canonical" href="nachtcraft_board/1101.html" />
+<meta name="description" content="http://blog.naver.com/jgs6618/220667975817  홍보용 블로그     [게스트하우스 2번지]        " />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ruins.nachtbeere.net/bbs/nachtcraft_board/1101" />
+<meta property="og:title" content="밤딸기 플레이스 - 마인크래프트/게시판" />
+<meta property="og:description" content="http://blog.naver.com/jgs6618/220667975817  홍보용 블로그     [게스트하우스 2번지]        " />
+<meta property="article:published_time" content="2016-03-29T08:18:14+00:00" />
+<meta property="article:modified_time" content="2016-04-26T08:52:28+00:00" />
+<meta property="og:image" content="https://ruins.nachtbeere.net/bbs/./files/attach/images/177/101/001/887d2e968a77806dea79d966086a1b18.png" />
+<meta property="og:image:width" content="1366" />
+<meta property="og:image:height" content="768" />
+<meta property="og:image" content="https://ruins.nachtbeere.net/bbs/./files/attach/images/177/101/001/55947358d114b7a55175370e75e66f9a.png" />
+<meta property="og:image:width" content="1366" />
+<meta property="og:image:height" content="768" />
+<meta property="og:image" content="https://ruins.nachtbeere.net/bbs/./files/attach/images/177/101/001/e45421471ff897d1fc7ae9f6549ecd27.png" />
+<meta property="og:image:width" content="1366" />
+<meta property="og:image:height" content="768" />
+<meta property="og:image" content="https://ruins.nachtbeere.net/bbs/./files/attach/images/177/101/001/d5a621fdcde2def91943eb9784d77d51.png" />
+<meta property="og:image:width" content="1366" />
+<meta property="og:image:height" content="768" />
+<style type="text/css">
+/* background color */
+#xet_header.header_down,
+.cameraSlide,
+.xet_section .themebg,
+.xet_section.parallax,
+.xet_sns a,
+.xet_layout_btn:hover,
+.xet_lnb_title,
+ul.xet_lnb li a:hover, 
+ul.xet_lnb li a.on,
+#xet_top_scroll {
+	background-color: ;
+}
+/* color */
+.xet_section,
+.xet_fulldown,
+.xet_mnav li a,
+.xet_side_widget .h3,
+.xet_layout_btn,
+.xet_layout_btn.w:hover,
+.xet_sns a:hover,
+.breadcrumb_wrp a,
+.breadcrumb_wrp ul li:after,
+.selecter-selected,
+#xet_footer,
+.xet_footer_nav li a,
+.xet_footer_nav > li:after {
+	color: ;
+}
+/* border color */
+.xet_section .xet_icon,
+.xet_sns a,
+.xet_layout_btn {
+	border-color: ;
+}
+</style><script>
+//<![CDATA[
+xe.current_lang = "ko";
+xe.cmd_find = "찾기";
+xe.cmd_cancel = "취소";
+xe.cmd_confirm = "확인";
+xe.msg_no_root = "루트는 선택 할 수 없습니다.";
+xe.msg_no_shortcut = "바로가기는 선택 할 수 없습니다.";
+xe.msg_select_menu = "대상 메뉴 선택";
+//]]>
+</script>
+</head>
+<body>
+<!--
+Copyright 2014 inpleworks, Co. 
+-->
+<!-- // browser //-->
+<!-- // mobile responsive //-->
+<!-- Demo Setting -->
+<!-- // css //-->
+<!-- // js //-->
+
+<script>
+(function($) {
+	$(window).load(function() {			
+		$('#camera').camera({
+			loader				: 'none',
+			fx					: 'simpleFade',			
+			height			: '25%',		
+			autoAdvance : true,	
+			mobileAutoAdvance : true,
+			navigation			: true,
+			navigationHover: true,
+			opacityOnGrid		: false,	
+			overlayer			: false,	
+			pagination			: false,
+			playPause			: false,			
+			pauseOnClick		: false,			
+			portrait			: false, 				
+			time				: 3000,		
+			transPeriod			: 1500,
+			thumbnails: false
+		});			
+	});
+})(jQuery);
+</script><header id="xet_header" class="animated">							
+	<div class="xet_logo float_left">
+		<a href="https://ruins.nachtbeere.net/bbs/">
+							(구)밤딸기 플레이스					</a>
+	</div>			
+	<nav class="xet_nav_wrp float_right xet_clearfix">
+		<div class="xet_acc float_right">				
+			<a href="index.php%3Fmid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101&amp;act=dispBoardTagList.html#" id="xet_nav_o" class="hidden_pc visible_tablet" onclick="javascript:return false;">
+				<span class="icon_menu"><i class="xe-align-justify"></i></span>
+				<span class="icon_close"><i class="xi-close"></i></span>
+			</a>			
+			<a href="index.php%3Fmid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101&amp;act=dispBoardTagList.html#" id="acc_o" onclick="javascript:return false;">				
+				<span class="icon_menu"><i class="xi-lock"></i></span>
+				<span class="icon_close"><i class="xi-close"></i></span>
+			</a>									
+		</div>		
+		<ul id="xet_nav" class="xet_nav float_right hidden_tablet">
+			<li>					
+				<a href="index.html"><span>대문</span></a>				
+									
+			</li><li>					
+				<a href="introduce.html"><span>밤딸기</span></a>				
+				<ul class="child1">
+					<span class="edge"></span>
+					<li>							
+						<a href="introduce.html">소개</a>							
+											</li><li>							
+						<a href="notice.html">공지</a>							
+											</li><li>							
+						<a href="report.html">신고</a>							
+											</li><li>							
+						<a href="donate.html">기부</a>							
+											</li>				</ul>					
+			</li><li>					
+				<a href="nachtcraft.html" class="on"><span>마인크래프트</span></a>				
+				<ul class="child1">
+					<span class="edge"></span>
+					<li>							
+						<a href="nachtcraft.html">소개</a>							
+											</li><li>							
+						<a href="nachtcraft_rule.html">규칙</a>							
+											</li><li>							
+						<a href="nachtcraft_connect.html">접속</a>							
+											</li><li>							
+						<a href="recomm.html">추천</a>							
+											</li><li>							
+						<a href="nachtcraft_rank.html">랭킹</a>							
+											</li><li>							
+						<a href="http://wiki.minecraft.nachtbeere.net" target="_blank">위키⎋</a>							
+											</li><li>							
+						<a href="nachtcraft_map.html">지도</a>							
+											</li><li>							
+						<a href="nachtcraft_board.html">게시판</a>							
+											</li><li>							
+						<a href="nachtcraft_help.html">도움말</a>							
+											</li><li>							
+						<a href="tutorial.html">튜토리얼</a>							
+											</li>				</ul>					
+			</li><li>					
+				<a href="etc.html"><span>다른 게임들</span></a>				
+				<ul class="child1">
+					<span class="edge"></span>
+					<li>							
+						<a href="etc.html">소개</a>							
+											</li><li>							
+						<a href="etc_board.html">게시판</a>							
+											</li><li>							
+						<a href="ottd.html">OTTD</a>							
+											</li><li>							
+						<a href="starbound.html">스타바운드</a>							
+											</li>				</ul>					
+			</li>	
+		</ul>
+					
+	</nav>			
+</header>
+	
+<div id="xet_body" class="sub_content_bg ">
+			
+	
+	<div class="xet_section">
+		<div class="camera">
+		    <div class="camera_wrap camera_white_skin" id="camera">
+		        <div data-src="https://ruins.nachtbeere.net/bbs/files/attach/images/130/07fb457b962618e1f37e7b645339e03d.png">
+		            <div class="camera_caption fadeIn camera_effected caption-center">
+		                <h1 class="h1">밤딸기 플레이스 마인크래프트</h1>		                <h4 class="h4">다시는 호스팅을 중단하지 않겠습니다.</h4>		                		            </div>
+		        </div>
+		        <div data-src="https://ruins.nachtbeere.net/bbs/files/attach/images/130/7f128fd8681cc79ffb8c5f68060532c6.png">
+		            <div class="camera_caption fadeIn camera_effected caption-center">
+		                <h1 class="h1">길은 여러 갈래</h1>		                <h4 class="h4">당신의 선택에 따라, 마음 가는 대로</h4>		                		            </div>
+		        </div>		        <div data-src="https://ruins.nachtbeere.net/bbs/files/attach/images/130/c74b2cd31f755a1a276b44181a674eed.png">
+		            <div class="camera_caption fadeIn camera_effected caption-center">
+		                <h1 class="h1">모두가 함께 만들어낸</h1>		                <h4 class="h4">최고의 시스템, 최고의 작품</h4>		                		            </div>
+		        </div>		        <div data-src="https://ruins.nachtbeere.net/bbs/files/attach/images/130/27349397eb78a87c731228802fe193d3.png">
+		            <div class="camera_caption fadeIn camera_effected caption-left">
+		                <h1 class="h1">밥만 먹을 수는 없죠</h1>		                <h4 class="h4">가끔은 빵도, 과자도</h4>		                		            </div>
+		        </div>        
+			</div>	
+		</div>    
+	</div>	
+	
+		
+	<div class="breadcrumb_wrp">
+		<div class="xet_container">
+			<h2 class="float_left"><a href="nachtcraft.html">마인크래프트</a></h2>
+			<ul class="float_right">
+				<li><a href="nachtcraft.html">마인크래프트</a></li>				<li><a href="nachtcraft_board.html">게시판</a></li>											</ul>
+		</div>
+	</div>	
+	<div class="xet_container">
+				
+		<div class="hidden_pc visible_tablet">
+			<div class="xet_selecter xet_mg_t30 xet_mg_b30">
+				<form action="index.php%3Fmid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101&amp;act=dispBoardTagList.html#" method="GET"><input type="hidden" name="error_return_url" value="/bbs/index.php?mid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101&amp;act=dispBoardTagList" /><input type="hidden" name="act" value="dispBoardTagList" /><input type="hidden" name="mid" value="nachtcraft_board" /><input type="hidden" name="vid" value="" />
+					<select name="selecter_links_external">
+											<option value="https://ruins.nachtbeere.net/bbs/nachtcraft">마인크래프트</option>		
+																												<option value="https://ruins.nachtbeere.net/bbs/nachtcraft">  - 소개</option>																												<option value="https://ruins.nachtbeere.net/bbs/nachtcraft_rule">  - 규칙</option>																												<option value="https://ruins.nachtbeere.net/bbs/nachtcraft_connect">  - 접속</option>																												<option value="https://ruins.nachtbeere.net/bbs/recomm">  - 추천</option>																												<option value="https://ruins.nachtbeere.net/bbs/nachtcraft_rank">  - 랭킹</option>																												<option value="http://wiki.minecraft.nachtbeere.net">  - 위키⎋</option>																												<option value="https://ruins.nachtbeere.net/bbs/nachtcraft_map">  - 지도</option>																												<option value="https://ruins.nachtbeere.net/bbs/nachtcraft_board" selected="selected">  - 게시판</option>																												<option value="https://ruins.nachtbeere.net/bbs/nachtcraft_help">  - 도움말</option>																												<option value="https://ruins.nachtbeere.net/bbs/tutorial">  - 튜토리얼</option>																</select>
+				</form>
+			</div>
+		</div>					
+		<div class="xet_clearfix xet_mg_t30">			
+						
+			
+			<div class="xet_side_wrp side_left hidden_tablet">
+				<div class="xet_side">
+					
+					<div class="xet_lnb_title"><a href="nachtcraft.html">마인크래프트</a></div>
+					<div class="xet_lnb_wrp">						
+						<ul class="xet_lnb">
+							<li>
+								<a href="nachtcraft.html">소개</a>								
+															</li><li>
+								<a href="nachtcraft_rule.html">규칙</a>								
+															</li><li>
+								<a href="nachtcraft_connect.html">접속</a>								
+															</li><li>
+								<a href="recomm.html">추천</a>								
+															</li><li>
+								<a href="nachtcraft_rank.html">랭킹</a>								
+															</li><li>
+								<a href="http://wiki.minecraft.nachtbeere.net" target="_blank">위키⎋</a>								
+															</li><li>
+								<a href="nachtcraft_map.html">지도</a>								
+															</li><li>
+								<a href="nachtcraft_board.html" class="on">게시판</a>								
+															</li><li>
+								<a href="nachtcraft_help.html">도움말</a>								
+															</li><li>
+								<a href="tutorial.html">튜토리얼</a>								
+															</li>						</ul>					</div>				
+			
+					
+																				
+				</div>
+			</div>						
+			
+			<div class="xet_content_wrp">			
+				<div class="xet_content xet_clearfix  sub_content side_left">    <div class="board">
+	<div class="tagList">
+	</div>
+<div class="tagFooter">
+    <a href="index.php%3Fmid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101.html" class="btn">돌아가기</a>
+</div>
+	</div>
+</div>
+			</div>			
+				
+		</div>
+	</div>
+</div>
+	
+	
+<div id="xet_footer" class="footer_sub">	
+	<div class="text_center xet_pd_tb60">			
+					
+				<div class="xet_mg_b20">
+			<p><strong>밤딸기 플레이스 - Nachtbeere Plays</strong></p>																
+		</div>			
+						
+		<p class="xet_copyright">Copyright©2015~2020 밤딸기 플레이스. All rights reserved</p>
+	</div>	
+</div>
+<div id="xet_acc_layer" class="xet_fulldown text_center">
+	<div class="xet_fulldown_cont">
+		<h2 class="h2">LOGIN</h2>	
+			
+		<div class="xet_macc">		
+						
+			<p><a href="index.php%3Fmid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101&amp;act=dispMemberLoginForm.html">로그인</a></p>
+			<p><a href="index.php%3Fmid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101&amp;act=dispMemberSignUpForm.html">회원가입</a></p>
+					</div>	
+	</div>
+</div>
+<div id="xet_search_layer" class="xet_fulldown text_center">
+	<div class="xet_fulldown_cont">		
+		<h2 class="h2">SEARCH</h2>
+		<form action="https://ruins.nachtbeere.net/bbs/" method="get" class="xet_search_form"><input type="hidden" name="error_return_url" value="/bbs/index.php?mid=nachtcraft_board&amp;sort_index=readed_count&amp;order_type=desc&amp;page=3&amp;document_srl=1101&amp;act=dispBoardTagList" />
+						<input type="hidden" name="mid" value="nachtcraft_board" />
+			<input type="hidden" name="act" value="IS" />
+			<input type="hidden" name="search_target" value="title_content" />
+			<input name="is_keyword" type="text" class="itext r2" value="" placeholder="입력후 엔터..." spellcheck="true" />
+		</form>	
+	</div>
+</div>
+<div id="xet_mnav_layer" class="xet_fulldown text_center">
+	<div class="xet_fulldown_cont">			
+		<h2 class="h2">MENU NAVIGATION</h2>	
+		<div class="xet_mnav">		
+			<ul>
+				<li>					
+					<a href="index.html"><span>대문</span></a>				
+										
+				</li><li>					
+					<a href="introduce.html"><span>밤딸기</span></a>				
+					<ul class="child1">
+						<li>							
+							<a href="introduce.html">소개</a>							
+													</li><li>							
+							<a href="notice.html">공지</a>							
+													</li><li>							
+							<a href="report.html">신고</a>							
+													</li><li>							
+							<a href="donate.html">기부</a>							
+													</li>					</ul>					
+				</li><li>					
+					<a href="nachtcraft.html" class="on"><span>마인크래프트</span></a>				
+					<ul class="child1">
+						<li>							
+							<a href="nachtcraft.html">소개</a>							
+													</li><li>							
+							<a href="nachtcraft_rule.html">규칙</a>							
+													</li><li>							
+							<a href="nachtcraft_connect.html">접속</a>							
+													</li><li>							
+							<a href="recomm.html">추천</a>							
+													</li><li>							
+							<a href="nachtcraft_rank.html">랭킹</a>							
+													</li><li>							
+							<a href="http://wiki.minecraft.nachtbeere.net" target="_blank">위키⎋</a>							
+													</li><li>							
+							<a href="nachtcraft_map.html">지도</a>							
+													</li><li>							
+							<a href="nachtcraft_board.html">게시판</a>							
+													</li><li>							
+							<a href="nachtcraft_help.html">도움말</a>							
+													</li><li>							
+							<a href="tutorial.html">튜토리얼</a>							
+													</li>					</ul>					
+				</li><li>					
+					<a href="etc.html"><span>다른 게임들</span></a>				
+					<ul class="child1">
+						<li>							
+							<a href="etc.html">소개</a>							
+													</li><li>							
+							<a href="etc_board.html">게시판</a>							
+													</li><li>							
+							<a href="ottd.html">OTTD</a>							
+													</li><li>							
+							<a href="starbound.html">스타바운드</a>							
+													</li>					</ul>					
+				</li>	
+			</ul>
+		</div>
+	</div>
+</div>이 사이트는 더이상 사용되지 않습니다. games.nachtbeere.net 으로 방문해주세요.<!-- ETC -->
+<div class="wfsr"></div>
+<script src="files/cache/js_filter_compiled/d046d1841b9c79c545b82d3be892699d.ko.compiled.js%3F20200406164101"></script><script src="addons/autolink/autolink.js%3F20200406164058"></script><script src="common/js/plugins/ui/jquery-ui.min.js%3F20200406164058"></script><script src="common/js/plugins/ui/jquery.ui.datepicker-ko.js%3F20200406164058"></script><script src="addons/resize_image/js/resize_image.min.js%3F20200406164058"></script><script src="modules/board/skins/xedition/board.default.min.js%3F20200406164058"></script></body>
+</html>

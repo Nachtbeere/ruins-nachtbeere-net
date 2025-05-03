@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+.xet_container { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.xet_grid:before,
+.xet_grid:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.xet_grid:after { clear: both; }
+.xet_grid { width: 100%; *zoom:1; }
+[class*="xet_grid"] { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*  grid 12  fluid no offset
+-------------------------------------- */
+[class*="xet_grid_"] { float: left; }
+.xet_grid_12 { width: 100%; margin-bottom: 30px; }	
+.xet_grid_11 { width: 91.66%; }
+.xet_grid_10 { width: 83.33%; }
+.xet_grid_9 { width: 75%; }
+.xet_grid_8 { width: 66.66%; }
+.xet_grid_7 { width: 58.33%; }
+.xet_grid_6 { width: 50%; }
+.xet_grid_5 { width: 41.66%; }
+.xet_grid_4 { width: 33.33%; }
+.xet_grid_3 { width: 25%; }
+.xet_grid_2 { width: 16.66%; }
+.xet_grid_1 { width: 8.333%; }
+
+.hidden_pc { display: none !important; }
+.float_right_pc { float: right !important; }
+
+
+
+@media (min-width: 1200px) {
+	.xet_container { 
+		width:1200px; 
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+}
+@media (max-width: 1199px) {	
+	.xet_container {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
+@media (max-width: 979px) {		
+	/* grid */	
+	.xet_grid_1,
+	.xet_grid_2,
+	.xet_grid_3,
+	.xet_grid_4,
+	.xet_grid_5,
+	.xet_grid_6,
+	.xet_grid_7,
+	.xet_grid_8,
+	.xet_grid_9,
+	.xet_grid_10,
+	.xet_grid_11,
+	.xet_grid_12 { width: 100%; }
+	.hidden_tablet { display: none !important; }
+	.visible_tablet { display: inherit !important; }
+	.bg_size_tablet { -webkit-background-size: cover; }
+	.text_center_tablet { text-align: center !important; }
+	.text_left_tablet { text-align: left !important; }		
+	.xet_mg_b60_tablet { margin-bottom: 60px; }
+	
+	h1.h1 { font-size: 28px; }
+	h2.h2 { font-size: 24px; }
+	h3.h3 { font-size: 20px; }
+	h4.h4 { font-size: 16px; }
+	h5.h5 { font-size: 13px; }
+	
+	/* header
+	-------------------------------------- */
+	#xet_header {
+		height: 60px;
+	}
+	.xet_logo {
+		margin-left: 15px; 
+		line-height: 60px;
+	}
+	.xet_logo a {
+		height: 60px;
+		line-height: 60px;	
+		font-size: 22px;
+	}
+	.xet_logo a img {
+		width: 100px;
+	}
+	.xet_nav_wrp { 
+		margin-right: 15px; 
+	}
+	.xet_acc > a { 
+		margin: 20px 0 0 10px;
+	}
+	
+	#xet_body.no_slider {
+		margin-top: 60px;
+	}	
+		
+	/* content 
+	-------------------------------------- */
+	.xet_content {
+		margin: 0 !important;
+	}
+
+
+	/* layout in buttons
+	-------------------------------------- */
+	.xet_layout_btn { 
+		font-size: 14px;
+		padding: 8px 12px;
+	}	
+	.xet_layout_btn.small { 
+		font-size: 12px;
+		padding: 6px 10px;
+	}
+	
+	.xet_mg_t30 {
+		margin-top: 15px;
+	}
+	.xet_mg_b30 {
+		margin-bottom: 15px;
+	}
+	.xet_pd_tb60 {
+		padding: 30px 0;
+	}
+	
+	.xet_fulldown_cont {
+		margin-top: 60px;
+	}
+	
+
+	
+	
+}
+@media (max-width: 767px) {	
+	.xet_macc,
+	.xet_mnav {
+		height: 50%;
+	}
+	div#camera {min-height: 200px !important;}
+}
+
+@media all and (min-width:320px){
+	div#camera {min-height: 200px !important;}
+}
+
+@media (max-width: 479px) {			
+	.bg_size_mobile { -webkit-background-size: cover; }
+	.fontsize12_mobile { font-size: 12px !important; }	
+	.fontsize11_mobile { font-size: 11px !important; }	
+	.hidden_mobile { display: none !important; }
+	.visible_mobile { display: inherit !important; }
+	.text_center_mobile { text-align: center; }
+	h1.h1 { font-size: 24px; }
+	h2.h2 { font-size: 20px; }
+	h3.h3 { font-size: 16px; }
+	h4.h4 { font-size: 14px; }
+	h5.h5 { font-size: 12px; }
+	
+	.breadcrumb_wrp { text-align: center; }
+	.breadcrumb_wrp h2.float_left { float: none; margin-bottom: 20px; }
+	.breadcrumb_wrp ul.float_right { float: none; }
+
+	.xet_macc,
+	.xet_mnav {
+		height: 80%;
+	}
+	
+	.xe-widget-wrapper {
+		width: 100% !important;
+		float: none !important;
+	}
+	
+	
+}
+
+@media all and (min-width:980px){
+	div#camera {min-height: 245px !important;}
+}
+@media all and (min-width:1025px){
+	div#camera {min-height: 320px !important;}
+}
+
+
+/* 상단 배너가 로드가 늦어 상하운동을 하기 때문에 camera div 높이를 강제 조정함. 대문의 게시물 목록 레이아웃 수정 */
+
+
+
